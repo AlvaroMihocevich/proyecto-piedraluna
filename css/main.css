@@ -27,6 +27,19 @@ main {
     margin-bottom: 50px;
 }
 
+
+.h1general{
+
+    font-family: CherishMoment;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+
+    animation-delay: 1s;
+
+}
+
+
 /* El header para todas */
 header {
     background-color: #f0d98f8c;
@@ -73,13 +86,30 @@ nav ul li {
     font-size: 30px;
 
     list-style: none;
-
+    
+    transition: all;
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
+
+nav ul li:hover{
+    transform: scale(1.1);
+    background-color: #ee9b9b;
+    border-radius: 7px;
+}
+
 
 nav ul li a {
     text-decoration: none;
     color: white;
 
+    transition: all;
+
+}
+
+nav ul li a:hover{
+    color: beige;
 }
 
 div .botonesheader {
@@ -88,17 +118,6 @@ div .botonesheader {
     display: none;
 }
 
-
-.h1general{
-
-    font-family: CherishMoment;
-    font-size: 50px;
-    text-align: center;
-    padding: 10px;
-
-    animation-delay: 1s;
-
-}
 
 /* Index Main */
 .index-mainwrapper {
@@ -333,22 +352,24 @@ div .formconsulta textarea {
 
 .tablamyc {
     border: solid 4px;
-    border-color: #b64646;
+    border-color: #31ca12;
     border-collapse: collapse;
+
+    background-color: rgba(225, 241, 193, 0.39);
     
 
 }
 
 div .tablamyc td {
     border: solid 2px;
-    border-color: hsl(71, 77%, 71%);
+    /* border-color: hsl(258, 81%, 42%); */
     font-family: Cherishmoment;
     font-size: 15px;
 }
 
 div .tablamyc th {
     border: solid 2px;
-    border-color: hsl(71, 77%, 71%);
+    /* border-color: hsl(71, 77%, 71%); */
 }
 
 div .tablamyc thead {
@@ -360,6 +381,10 @@ div.tablamyc tbody {
     font-family: Cafematcha;
     font-size: 15px;
 }
+
+
+
+
 
 
 
@@ -441,22 +466,29 @@ footer {
     font-family: CherishMoment;
     font-size: 20px;
     margin: 10px;
+    color: rgba(255, 255, 255, 0.856);
 }
 
-.navfooterlistas li {
+.navfooterlistas li a{
     font-family: Pulang;
     font-size: 15px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
 
 }
 
-.contactofooterlistas li {
+
+.contactofooterlistas li{
     font-family: Pulang;
     font-size: 15px;
+    color: rgb(66, 66, 66);
 }
 
-.redesfooterlistas li {
+.redesfooterlistas li a{
     font-family: Pulang;
     font-size: 15px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
 }
 
 
@@ -471,7 +503,7 @@ footer {
 
     50% {
         transform: translateY(-50px);
-        opacity: 0.5;
+        opacity: .5;
     }
 
     100% {
@@ -480,6 +512,21 @@ footer {
     }
 }
 
+
+.animate__pulse{
+    animation-duration: 1s;
+}
+
+.animate__fadeIn{
+    animation-duration: 1.5s;
+}
+
+.animate__fadeInLeft{
+    animation-duration: 1.2s;
+}
+.animate__fadeInRight{
+    animation-duration: 1.2s;
+}
 
 
 
@@ -727,13 +774,6 @@ footer {
         ;
     }
 
-    .h1general {
-        font-family: CherishMoment;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 0px;
-    }
-
     .divtablamyc {
         display: flex;
         justify-content: center;
@@ -741,7 +781,6 @@ footer {
 
     .tablamyc {
         border: solid 4px;
-        border-color: #b64646;
         border-collapse: collapse;
         width: 75%;
 
@@ -749,14 +788,14 @@ footer {
 
     div .tablamyc td {
         border: solid 2px;
-        border-color: hsl(71, 77%, 71%);
         font-family: Cherishmoment;
         font-size: 15px;
+        
+
     }
 
     div .tablamyc th {
         border: solid 2px;
-        border-color: hsl(71, 77%, 71%);
     }
 
     div .tablamyc thead {
@@ -1077,6 +1116,7 @@ footer {
     .divopcionesgeneral {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
     }
 
     .opcionescontacto {
@@ -1143,13 +1183,6 @@ footer {
         ;
     }
 
-    .h1general {
-        font-family: CherishMoment;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 0px;
-    }
-
     .divtablamyc {
         display: flex;
         justify-content: center;
@@ -1157,22 +1190,22 @@ footer {
 
     .tablamyc {
         border: solid 4px;
-        border-color: #b64646;
         border-collapse: collapse;
         width: 75%;
+        border-color: #fadc9c;
 
     }
 
     div .tablamyc td {
         border: solid 2px;
-        border-color: hsl(71, 77%, 71%);
         font-family: Cherishmoment;
         font-size: 15px;
+        border-color: rgba(142, 194, 243, 0.89);
     }
 
     div .tablamyc th {
         border: solid 2px;
-        border-color: hsl(71, 77%, 71%);
+        border-color: rgba(142, 194, 243, 0.89);
     }
 
     div .tablamyc thead {
