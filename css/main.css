@@ -30,21 +30,25 @@ main {
 /* El header para todas */
 header {
     background-color: #f0d98f8c;
-    height: 300px;
+
     grid-area: header;
 }
 
 .headerwrapper {
+    height: 300px;
     display: grid;
     grid-template-areas:
         "nav logo"
     ;
-    grid-template-columns: 40% 60%;
+    grid-template-columns:1fr 1fr ;
+    
 
 }
 
 .divfotologo {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: logo;
 }
 
@@ -56,22 +60,19 @@ nav {
     padding: 5px;
 
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
+    flex-direction: column;
     grid-area: nav;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
     font-family: CherishMoment;
     font-size: 30px;
 
-
+    list-style: none;
 
 }
 
@@ -85,8 +86,6 @@ div .botonesheader {
     font-family: CherishMoment;
     font-size: 15px;
     display: none;
-    flex-direction: row-reverse;
-
 }
 
 
@@ -186,6 +185,16 @@ div .botonesheader {
 
 }
 
+.categoriaprod {
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+}
+
+
 .tituloscat {
     font-family: CherishMoment;
     font-size: 25px;
@@ -208,12 +217,6 @@ div .botonesheader {
     text-align: center;
 }
 
-.categoriaprod {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
 
 
 
@@ -228,12 +231,36 @@ div .botonesheader {
         "footer";
 }
 
-.h1general {
-    font-family: CherishMoment;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 0px;
+.divopcionesgeneral {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
+
+#p1consulta {
+    font-family: Pulang;
+    font-size: 30px;
+}
+
+.opcionescontacto ul li {
+    font-family: Pulang;
+    font-size: 20px
+}
+
+
+.opcionescontacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.divformconsulta {
+    display: flex;
+    justify-content: center;
+}
+
 
 .h3consulta {
     font-family: Pulang;
@@ -243,38 +270,7 @@ div .botonesheader {
     margin-bottom: 10px;
 }
 
-#p1consulta {
-    font-family: Pulang;
-    font-size: 30px;
 
-}
-
-.opcionescontacto ul li {
-    font-family: Pulang;
-    font-size: 20px
-}
-
-.divopcionesgeneral {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.opcionescontacto {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-}
-
-.divformconsulta {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.listaopcionescontacto {
-    margin-top: 0%;
-    margin-bottom: 300px;
-}
 
 .formconsulta {
     width: 450px;
@@ -339,7 +335,7 @@ div .formconsulta textarea {
     border: solid 4px;
     border-color: #b64646;
     border-collapse: collapse;
-    width: 75%;
+    
 
 }
 
@@ -377,6 +373,9 @@ div.tablamyc tbody {
         "footer"
     ;
 }
+.pflista ol{
+    padding-left: 20px
+}
 
 .pflista ol li {
     font-family: CherishMoment;
@@ -394,6 +393,10 @@ div.tablamyc tbody {
     max-width: fit-content;
 }
 
+
+
+
+
 /* Footer para todas */
 footer {
     background-color: #f0d98f8c;
@@ -406,7 +409,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 30px;
+    padding-left: 10px;
 
 }
 
@@ -418,19 +421,23 @@ footer {
 
 .navfooter ul {
     list-style: none;
+    padding-left: 5px;
 }
 
 .contactofooter ul {
     list-style: none;
+    padding-left: 5px;
 }
 
 .redesfooter ul {
     list-style: none;
+    padding-left: 5px;
 }
 
 #h6footer {
     font-family: CherishMoment;
     font-size: 20px;
+    margin: 10px;
 }
 
 .navfooterlistas li {
@@ -520,56 +527,7 @@ footer {
 
     /* El header para todas */
 
-    header {
-        max-height: 500px;
-        grid-area: header;
-    }
 
-    .headerwrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .divfotologo {
-        text-align: center;
-        grid-area: logo;
-    }
-    
-    .fotologo{
-        width: 200px;
-    }
-    nav {
-        padding: 5px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-
-        grid-area: nav;
-    }
-
-    nav ul li {
-
-        display: inline-block;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family: CherishMoment;
-        font-size: 30px;
-
-    }
-
-    nav ul li a {
-        text-decoration: none;
-    }
-
-    div .botonesheader {
-        font-family: CherishMoment;
-        font-size: 15px;
-        display: flex;
-        flex-direction: row-reverse;
-
-    }
 
 
     .h1general {
@@ -658,7 +616,6 @@ footer {
     .categoriaprod {
 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
 
@@ -703,24 +660,22 @@ footer {
 
     .divopcionesgeneral {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .opcionescontacto {
         display: flex;
-        justify-content: flex-start;
         flex-wrap: wrap;
 
     }
 
     .divformconsulta {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .listaopcionescontacto {
         margin-top: 0%;
-        margin-bottom: 300px;
     }
 
     .formconsulta {
@@ -894,6 +849,29 @@ footer {
 
 }
 
+@media (max-width:768px){
+    .divformconsulta form{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1025,6 +1003,12 @@ footer {
 
     }
 
+    .categoriaprod {
+        grid-template-rows: none;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
     .tituloscat {
         font-family: CherishMoment;
         font-size: 25px;
@@ -1047,12 +1031,7 @@ footer {
         text-align: center;
     }
 
-    .categoriaprod {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
+   
 
 
 
