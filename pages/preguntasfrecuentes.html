@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://kit.fontawesome.com/86ec738768.js" crossorigin="anonymous"></script>
 
     <title>Preguntas frecuentes</title>
 </head>
+
 <body>
     <div class="pf-mainwrapper">
         <header>
@@ -21,7 +26,35 @@
                     <a href="../index.html"><img class="fotologo" src="../images/logo.jpeg" alt="" width="200px"></a>
                 </div>
                 <!-- Inicio menu navegacion -->
-                <nav>
+                <nav id="nav1" class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-house"></i></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="productos.html">Catalogo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="materialesycuidados.html">Materiales y
+                                        cuidados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="preguntasfrecuentes.html">Preguntas
+                                        frecuentes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="nav2">
                     <ul>
                         <li>
                             <a href="../index.html">Inicio</a>
@@ -45,14 +78,15 @@
         </header>
         <main>
             <h1 class="h1general animate__pulse">Preguntas Frecuentes</h1>
-            <div class="pfgeneral animate__lightSpeedInLeft">
+            <div class="pfgeneral animate__fadeIn">
                 <div class="pflista">
                     <ol>
                         <li>
                             Envios y transporte a eleccion del cliente
                         </li>
                         <p>
-                            Los envios se realizan una vez acreditado el pago del pedido. Si se acredito antes de las 13hs se despacha en el dia, y si fue pasado ese horario se despacha el dia siguiente.
+                            Los envios se realizan una vez acreditado el pago del pedido. Si se acredito antes de las
+                            13hs se despacha en el dia, y si fue pasado ese horario se despacha el dia siguiente.
                         </p>
                         <p>
                             Nos manejamos principalmente por cadeteria privada o Correo Argentino.
@@ -61,7 +95,9 @@
                             Pagos
                         </li>
                         <p>
-                            El pago se solicitara UNICAMENTE después de la CONFIRMACION del pedido por un tema de stock y para que el cliente se quede seguro que el pedido está confirmado y preparado para despachar.
+                            El pago se solicitara UNICAMENTE después de la CONFIRMACION del pedido por un tema de stock
+                            y para que el cliente se quede seguro que el pedido está confirmado y preparado para
+                            despachar.
                         </p>
                         <li>
                             Cuales son los medios de pago?
@@ -73,19 +109,24 @@
                             Devoluciones o reclamos
                         </li>
                         <p>
-                            Las devoluciones o reclamos por falla de producto se toman hasta 10 ( diez días ) después de haber recibido el producto.
+                            Las devoluciones o reclamos por falla de producto se toman hasta 10 ( diez días ) después de
+                            haber recibido el producto.
                         </p>
                         <p>
-                            Comunicarse al WhatsApp (3513494317) y mandar foto del producto fallado detallando el problema.
+                            Comunicarse al WhatsApp (3513494317) y mandar foto del producto fallado detallando el
+                            problema.
                         </p>
                         <p>
-                            En caso de corresponder se le dara al cliente la opción de agregar el mismo u otro producto de similar valor para el próximo pedido que se realice (SIN COSTO).
+                            En caso de corresponder se le dara al cliente la opción de agregar el mismo u otro producto
+                            de similar valor para el próximo pedido que se realice (SIN COSTO).
                         </p>
                         <li>
                             Cuales son los horarios de atencion y contacto?
                         </li>
                         <p>
-                            De 08:00 a 23:00 hs, ya que no poseemos un local y todas nuestras consultas son contestadas atraves de los medios de comunicacion, que podes encontrar en <a href="contacto.html">contacto.</a>
+                            De 08:00 a 23:00 hs, ya que no poseemos un local y todas nuestras consultas son contestadas
+                            atraves de los medios de comunicacion, que podes encontrar en <a
+                                href="contacto.html">contacto.</a>
                         </p>
                     </ol>
                 </div>
@@ -99,31 +140,31 @@
                     <h6 id="h6footer">Navegacion</h6>
                     <ul class="navfooterlistas">
                         <li>
-                            
+
                             <a href="index.html">
                                 <i class="fa-solid fa-house"></i>
                                 Inicio</a>
                         </li>
                         <li>
-                            
+
                             <a href="pages/productos.html">
                                 <i class="fa-solid fa-shop"></i>
                                 Catalogo</a>
                         </li>
                         <li>
-                            
+
                             <a href="pages/contacto.html">
                                 <i class="fa-solid fa-message"></i>
                                 Contacto</a>
                         </li>
                         <li>
-                            
+
                             <a href="pages/materialesycuidados.html">
                                 <i class="fa-solid fa-ring"></i>
                                 Materiales y cuidados</a>
                         </li>
                         <li>
-                            
+
                             <a href="pages/preguntasfrecuentes.html">
                                 <i class="fa-solid fa-circle-question"></i>
                                 Preguntas frecuentes</a>
@@ -151,7 +192,7 @@
                     <h6 id="h6footer">Redes Sociales</h6>
                     <ul class="redesfooterlistas">
                         <li>
-                            
+
                             <a href="https://www.instagram.com/piedraluna___/">
                                 <i class="fa-brands fa-instagram"></i>
                                 Instagram</a>
@@ -161,7 +202,7 @@
                             Tiktok(la tenemos que crear)
                         </li>
                         <li>
-                            
+
                             <a href="https://www.facebook.com/profile.php?id=100073533932417">
                                 <i class="fa-brands fa-facebook"></i>
                                 Facebook</a>
@@ -173,5 +214,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

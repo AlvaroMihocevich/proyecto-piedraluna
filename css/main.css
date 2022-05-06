@@ -28,12 +28,15 @@ main {
 }
 
 
-.h1general{
+.h1general {
 
     font-family: CherishMoment;
     font-size: 50px;
     text-align: center;
     padding: 10px;
+
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
+    ;
 
     animation-delay: 1s;
 
@@ -46,16 +49,17 @@ header {
 
     grid-area: header;
     border-radius: 7px;
+    margin-bottom: 20px;
 }
 
 .headerwrapper {
-    height: 250px;
+    height: 315px;
     display: grid;
     grid-template-areas:
         "nav logo"
     ;
-    grid-template-columns:1fr 1fr ;
-    
+    grid-template-columns: 1fr 2fr;
+
 
 }
 
@@ -66,20 +70,50 @@ header {
     grid-area: logo;
 }
 
-.fotologo{
+.fotologo {
     border-radius: 100px;
 }
 
+@media screen and (min-width: 0px)and (max-width: 1024px) {
+    #nav2 {
+        display: none !important;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 633px) {
+    header {
+        height: 385px;
+    }
+
+}
+
+#nav1 div a {
+    font-family: CherishMoment;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#nav1 div div a {
+    font-family: CherishMoment;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#nav1 div button {
+    margin-right: 100px;
+}
+
+
 nav {
     padding: 5px;
-
-    display: flex;
-    flex-direction: column;
     grid-area: nav;
 
 }
 
-nav ul{
+nav ul {
     margin: 0;
     padding: 0;
 }
@@ -89,17 +123,18 @@ nav ul li {
     font-size: 30px;
 
     list-style: none;
-    
+    border-radius: 7px;
+
     transition: all;
     transition-delay: 0.1s;
-    transition-duration: 1s;
+    transition-duration: .8s;
     transition-timing-function: ease;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     transform: scale(1.1);
     background-color: #ee9b9b;
-    border-radius: 7px;
+
 }
 
 
@@ -111,7 +146,7 @@ nav ul li a {
 
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: beige;
 }
 
@@ -125,6 +160,11 @@ nav ul li a:hover{
         "footer"
     ;
 
+}
+
+.carouselindex {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -156,6 +196,9 @@ nav ul li a:hover{
     border-radius: 7px;
     max-width: fit-content;
 
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
+    ;
+
 
 
     transition-property: all;
@@ -176,9 +219,6 @@ nav ul li a:hover{
 }
 
 .ofertasindex p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     font-family: CafeMatcha;
     font-size: 35px;
     padding: 5px;
@@ -204,14 +244,24 @@ nav ul li a:hover{
 }
 
 .categoriaprod {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.281));
 }
 
+
+.prodcat {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(166, 209, 247, 0.4);
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 .tituloscat {
     font-family: CherishMoment;
@@ -220,13 +270,6 @@ nav ul li a:hover{
 
 }
 
-.prodcat {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: rgb(166, 209, 247, 0.4);
-    justify-content: space-between;
-}
 
 .prodcat span {
     max-width: 200px;
@@ -249,10 +292,6 @@ nav ul li a:hover{
         "footer";
 }
 
-.divopcionesgeneral {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
 
 
 #p1consulta {
@@ -267,22 +306,14 @@ nav ul li a:hover{
 }
 
 
-.opcionescontacto {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
-}
-.listaopcionescontacto a{
+.listaopcionescontacto a {
     text-decoration: none;
     color: rgb(63, 63, 63);
 }
 
 
-.divformconsulta {
-    display: flex;
-    justify-content: center;
-}
+
 
 
 .h3consulta {
@@ -356,26 +387,23 @@ div .formconsulta textarea {
 
 .tablamyc {
     border: solid 4px;
-    border-color: #31ca12;
     border-collapse: collapse;
-
-    background-color: rgba(225, 241, 193, 0.39);
-    
+    width: 75%;
+    border-color: #fadc9c;
 
 }
 
 div .tablamyc td {
     border: solid 2px;
-    /* border-color: hsl(258, 81%, 42%); */
     font-family: Cherishmoment;
     font-size: 15px;
+    border-color: rgba(142, 194, 243, 0.89);
 }
 
 div .tablamyc th {
     border: solid 2px;
-    /* border-color: hsl(71, 77%, 71%); */
+    border-color: rgba(142, 194, 243, 0.89);
 }
-
 div .tablamyc thead {
     font-family: Pulang;
     font-size: 25px;
@@ -402,17 +430,19 @@ div.tablamyc tbody {
         "footer"
     ;
 }
-.pfgeneral{
+
+.pfgeneral {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
 
-.pflista{
+.pflista {
     width: 300px;
 }
-.pflista ol{
+
+.pflista ol {
     padding-left: 20px;
 }
 
@@ -424,6 +454,7 @@ div.tablamyc tbody {
     background-color: hsla(0, 24%, 59%, 0.74);
     max-width: fit-content;
     border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 .pflista ol p {
@@ -484,7 +515,7 @@ footer {
     color: rgba(255, 255, 255, 0.856);
 }
 
-.navfooterlistas li a{
+.navfooterlistas li a {
     font-family: Pulang;
     font-size: 15px;
     text-decoration: none;
@@ -493,13 +524,13 @@ footer {
 }
 
 
-.contactofooterlistas li{
+.contactofooterlistas li {
     font-family: Pulang;
     font-size: 15px;
     color: rgb(66, 66, 66);
 }
 
-.redesfooterlistas li a{
+.redesfooterlistas li a {
     font-family: Pulang;
     font-size: 15px;
     text-decoration: none;
@@ -528,25 +559,27 @@ footer {
 }
 
 
-.animate__pulse{
+.animate__pulse {
     animation-duration: 1s;
 }
 
-.animate__fadeIn{
+.animate__fadeIn {
     animation-duration: 1.5s;
 }
 
-.animate__fadeInLeft{
-    animation-duration: 1.2s;
-}
-.animate__fadeInRight{
+.animate__fadeInLeft {
     animation-duration: 1.2s;
 }
 
-.animate__lightSpeedInLeft{
+.animate__fadeInRight {
+    animation-duration: 1.2s;
+}
+
+.animate__lightSpeedInLeft {
     animation-duration: 1s;
 }
-.animate__fadeInDown{
+
+.animate__fadeInDown {
     animation-duration: 1.1s;
 }
 
@@ -593,13 +626,15 @@ footer {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
     /* El body de la pagina(Fondo,etc) */
 
 
     /* El header para todas */
-
+    #nav2 {
+        display: none !important;
+    }
 
 
     .h1general {
@@ -663,6 +698,22 @@ footer {
 
     }
 
+    .categoriaprod {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+    .prodcat {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: rgb(166, 209, 247, 0.4);
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
     .tituloscat {
         font-family: CherishMoment;
         font-size: 25px;
@@ -670,13 +721,6 @@ footer {
 
     }
 
-    .prodcat {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: rgb(166, 209, 247, 0.4);
-        justify-content: space-between;
-    }
 
     .prodcat span {
         max-width: 200px;
@@ -685,12 +729,7 @@ footer {
         text-align: center;
     }
 
-    .categoriaprod {
-
-        display: grid;
-        justify-items: center;
-    }
-
+ 
 
 
 
@@ -730,424 +769,9 @@ footer {
         font-size: 20px
     }
 
-    .divopcionesgeneral {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .opcionescontacto {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .divformconsulta {
-        display: flex;
-        justify-content: center;
-    }
 
     .listaopcionescontacto {
         margin-top: 0%;
-    }
-
-    .formconsulta {
-        width: 450px;
-        background-color: hsl(39, 64%, 79%);
-        padding: 10px 20px;
-        border-radius: 7px;
-        margin-bottom: 40px;
-
-    }
-
-    div .formconsulta input,
-    textarea {
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 7px;
-        box-sizing: border-box;
-        font-family: cherishmoment;
-        font-size: 17px;
-        border: none;
-    }
-
-    div .formconsulta textarea {
-        min-height: 100px;
-        max-height: 100px;
-        max-width: 450px;
-    }
-
-    #botonconsulta {
-        background-color: hsl(203, 46%, 74%);
-        padding: 15px;
-    }
-
-    #botonconsulta:hover {
-        cursor: pointer;
-    }
-
-
-
-    /* Materiales y Cuidados Main */
-    .myc-mainwrapper {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer"
-        ;
-    }
-
-    .divtablamyc {
-        display: flex;
-        justify-content: center;
-    }
-
-    .tablamyc {
-        border: solid 4px;
-        border-collapse: collapse;
-        width: 75%;
-
-    }
-
-    div .tablamyc td {
-        border: solid 2px;
-        font-family: Cherishmoment;
-        font-size: 15px;
-        
-
-    }
-
-    div .tablamyc th {
-        border: solid 2px;
-    }
-
-    div .tablamyc thead {
-        font-family: Pulang;
-        font-size: 25px;
-    }
-
-    div.tablamyc tbody {
-        font-family: Cafematcha;
-        font-size: 15px;
-    }
-
-
-
-
-    /* Preguntas frecuentes Main */
-    .pf-mainwrapper {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer"
-        ;
-    }
-
-    .pflista ol li {
-        font-family: CherishMoment;
-        font-size: 20px;
-        padding: 10px;
-        background-color: hsla(0, 24%, 59%, 0.74);
-        max-width: fit-content;
-    }
-    .pflista{
-        width: 500px;
-    }
-
-    .pflista p {
-        font-family: pulang;
-        font-size: 15px;
-        width: 800px;
-        background-color: hsla(39, 34%, 54%, 0.63);
-        max-width: fit-content;
-    }
-
-    /* Footer para todas */
-    footer {
-
-        grid-area: footer;
-    }
-
-    .divfooter {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .navfooter {
-        margin: 0px;
-        padding: 5px;
-        box-sizing: border-box;
-    }
-
-    .navfooter ul {
-        list-style: none;
-    }
-
-    .contactofooter ul {
-        list-style: none;
-    }
-
-    .redesfooter ul {
-        list-style: none;
-    }
-
-    #h6footer {
-        font-family: CherishMoment;
-        font-size: 20px;
-    }
-
-    .navfooterlistas li {
-        font-family: Pulang;
-        font-size: 15px;
-
-    }
-
-    .contactofooterlistas li {
-        font-family: Pulang;
-        font-size: 15px;
-    }
-
-    .redesfooterlistas li {
-        font-family: Pulang;
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width:768px){
-    .divformconsulta form{
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-    /* El header para todas */
-
-    header {
-        max-height: 500px;
-        grid-area: header;
-    }
-
-    .headerwrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .divfotologo {
-        text-align: center;
-        grid-area: logo;
-    }
-    
-    .fotologo{
-        width: 200px;
-    }
-    nav {
-        padding: 5px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-
-        grid-area: nav;
-
-
-
-    }
-
-    nav ul li {
-
-        display: inline-block;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family: CherishMoment;
-        font-size: 30px;
-
-    }
-
-    nav ul li a {
-        text-decoration: none;
-    }
-
-
-    /* Index Main */
-    .index-mainwrapper {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer"
-        ;
-
-    }
-
-    .divhomeopciones {
-        font-family: CafeMatcha;
-        font-size: 35px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 50px;
-        grid-row-gap: 40px;
-
-    }
-
-    .homeopciones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-
-
-
-    /* Catalogo/Productos Main */
-    .productos-mainwrapper {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer"
-        ;
-    }
-
-    .h1general {
-        font-family: CherishMoment;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 0px;
-    }
-
-    .catalogogeneral {
-        margin-bottom: 50px;
-
-    }
-
-    .categoriaprod {
-        grid-template-rows: none;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
-
-    .tituloscat {
-        font-family: CherishMoment;
-        font-size: 25px;
-        text-align: center;
-
-    }
-
-    .prodcat {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: rgb(166, 209, 247, 0.4);
-        justify-content: space-between;
-    }
-
-    .prodcat span {
-        max-width: 200px;
-        font-family: CafeMatcha;
-        font-size: 20px;
-        text-align: center;
-    }
-
-   
-
-
-
-
-
-    /* Contacto Main */
-    .contacto-mainwrapper {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-    .h1general {
-        font-family: CherishMoment;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 0px;
-    }
-
-    .h3consulta {
-        font-family: Pulang;
-        font-size: 40px;
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 10px;
-    }
-
-    #p1consulta {
-        font-family: Pulang;
-        font-size: 30px;
-
-    }
-
-    .opcionescontacto ul li {
-        font-family: Pulang;
-        font-size: 20px
-    }
-
-    .divopcionesgeneral {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
-    }
-
-    .opcionescontacto {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-
-    }
-
-    .divformconsulta {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .listaopcionescontacto {
-        margin-top: 0%;
-        margin-bottom: 300px;
     }
 
     .formconsulta {
@@ -1252,7 +876,397 @@ footer {
         background-color: hsla(0, 24%, 59%, 0.74);
         max-width: fit-content;
     }
-    .pflista{
+
+    .pflista {
+        width: 500px;
+    }
+
+    .pflista p {
+        font-family: pulang;
+        font-size: 15px;
+        width: 800px;
+        background-color: hsla(39, 34%, 54%, 0.63);
+        max-width: fit-content;
+    }
+
+    /* Footer para todas */
+    footer {
+
+        grid-area: footer;
+    }
+
+    .divfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navfooter {
+        margin: 0px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .navfooter ul {
+        list-style: none;
+    }
+
+    .contactofooter ul {
+        list-style: none;
+    }
+
+    .redesfooter ul {
+        list-style: none;
+    }
+
+    #h6footer {
+        font-family: CherishMoment;
+        font-size: 20px;
+    }
+
+    .navfooterlistas li {
+        font-family: Pulang;
+        font-size: 15px;
+
+    }
+
+    .contactofooterlistas li {
+        font-family: Pulang;
+        font-size: 15px;
+    }
+
+    .redesfooterlistas li {
+        font-family: Pulang;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .divformconsulta form {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    /* El header para todas */
+
+    header {
+        height: 280px;
+        grid-area: header;
+    }
+
+    .headerwrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divfotologo {
+        text-align: center;
+        grid-area: logo;
+    }
+
+    .fotologo {
+        width: 200px;
+    }
+
+    #nav1 {
+        display: none !important;
+    }
+
+    nav {
+        padding: 5px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        grid-area: nav;
+
+
+
+    }
+
+    nav ul li {
+
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: CherishMoment;
+        font-size: 30px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    }
+
+
+    /* Index Main */
+    .index-mainwrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+
+    }
+
+    .divhomeopciones {
+        font-family: CafeMatcha;
+        font-size: 35px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 40px;
+
+    }
+
+    .homeopciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+
+
+    /* Catalogo/Productos Main */
+    .productos-mainwrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    .h1general {
+        font-family: CherishMoment;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .catalogogeneral {
+        margin-bottom: 50px;
+
+    }
+
+    .categoriaprod {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .prodcat {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    
+        background-color: rgb(166, 209, 247, 0.4);
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .tituloscat {
+        font-family: CherishMoment;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+
+
+    .prodcat span {
+        max-width: 200px;
+        font-family: CafeMatcha;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    /* Contacto Main */
+    .contacto-mainwrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .h1general {
+        font-family: CherishMoment;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .h3consulta {
+        font-family: Pulang;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    #p1consulta {
+        font-family: Pulang;
+        font-size: 30px;
+
+    }
+
+    .opcionescontacto ul li {
+        font-family: Pulang;
+        font-size: 20px
+    }
+
+
+    .formconsulta {
+        width: 450px;
+        background-color: hsl(39, 64%, 79%);
+        padding: 10px 20px;
+        border-radius: 7px;
+        margin-bottom: 40px;
+
+    }
+
+    div .formconsulta input,
+    textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-family: cherishmoment;
+        font-size: 17px;
+        border: none;
+    }
+
+    div .formconsulta textarea {
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 450px;
+    }
+
+    #botonconsulta {
+        background-color: hsl(203, 46%, 74%);
+        padding: 15px;
+    }
+
+    #botonconsulta:hover {
+        cursor: pointer;
+    }
+
+
+
+    /* Materiales y Cuidados Main */
+    .myc-mainwrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    .divtablamyc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tablamyc {
+        border: solid 4px;
+        border-collapse: collapse;
+        width: 75%;
+        border-color: #fadc9c;
+
+    }
+
+    div .tablamyc td {
+        border: solid 2px;
+        font-family: Cherishmoment;
+        font-size: 15px;
+        border-color: rgba(142, 194, 243, 0.89);
+    }
+
+    div .tablamyc th {
+        border: solid 2px;
+        border-color: rgba(142, 194, 243, 0.89);
+    }
+
+    div .tablamyc thead {
+        font-family: Pulang;
+        font-size: 25px;
+    }
+
+    div.tablamyc tbody {
+        font-family: Cafematcha;
+        font-size: 15px;
+    }
+
+
+
+
+    /* Preguntas frecuentes Main */
+    .pf-mainwrapper {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    .pflista ol li {
+        font-family: CherishMoment;
+        font-size: 20px;
+        padding: 10px;
+        background-color: hsla(0, 24%, 59%, 0.74);
+        max-width: fit-content;
+    }
+
+    .pflista {
         width: 800px;
     }
 
