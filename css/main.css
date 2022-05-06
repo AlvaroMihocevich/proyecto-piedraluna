@@ -251,8 +251,7 @@ nav ul li a:hover {
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.281));
 }
 
-
-.prodcat {
+.producto{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -703,16 +702,6 @@ footer {
         flex-direction: row;
         justify-items: center;
     }
-    .prodcat {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: rgb(166, 209, 247, 0.4);
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
 
     .tituloscat {
         font-family: CherishMoment;
@@ -1099,12 +1088,19 @@ footer {
         flex-direction: column;
         padding: 10px;
     
-        background-color: rgb(166, 209, 247, 0.4);
         align-items: center;
         justify-content: space-between;
 
     }
-
+    .producto{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    
+        background-color: rgb(166, 209, 247, 0.4);
+        align-items: center;
+        justify-content: space-around;
+    }
     .tituloscat {
         font-family: CherishMoment;
         font-size: 25px;
