@@ -17,9 +17,7 @@
 
 /* El body de la pagina(Fondo,etc) */
 body {
-    background-image: url('../images/fondo1.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #E7D4B5;
 }
 
 main {
@@ -50,6 +48,10 @@ header {
     grid-area: header;
     border-radius: 7px;
     margin-bottom: 20px;
+
+    background-image: url('../images/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .headerwrapper {
@@ -88,6 +90,14 @@ header {
 
 }
 
+@media screen and (min-width: 991px) and (max-width: 1024px){
+    #nav2{
+        display: none !important; 
+    }
+
+
+}
+
 #nav1 div a {
     font-family: CherishMoment;
     font-size: 50px;
@@ -110,12 +120,15 @@ header {
 nav {
     padding: 5px;
     grid-area: nav;
+    
 
 }
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 1px;
+    background-color: #A0937D;
+    border-radius: 7px;
 }
 
 nav ul li {
@@ -132,8 +145,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform: scale(1.1);
-    background-color: #ee9b9b;
+    transform: scale(1.04);
+    background-color: #ee9b9bc9;
 
 }
 
@@ -199,7 +212,7 @@ nav ul li a:hover {
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
     ;
 
-
+/* 
 
     transition-property: all;
     transition-duration: 0.3s;
@@ -208,7 +221,7 @@ nav ul li a:hover {
 
     animation-name: fade-in-homeopciones;
     animation-timing-function: ease;
-    animation-duration: 2s;
+    animation-duration: 2s; */
 
 }
 
@@ -222,8 +235,10 @@ nav ul li a:hover {
     font-family: CafeMatcha;
     font-size: 35px;
     padding: 5px;
-    background-color: #baf0887e;
+    background-color: #F6E6CB;
     border-radius: 7px;
+
+    text-align: center;
 
 }
 
@@ -388,7 +403,8 @@ div .formconsulta textarea {
     border: solid 4px;
     border-collapse: collapse;
     width: 75%;
-    border-color: #fadc9c;
+    border-color: #6e6556;
+    
 
 }
 
@@ -396,16 +412,21 @@ div .tablamyc td {
     border: solid 2px;
     font-family: Cherishmoment;
     font-size: 15px;
-    border-color: rgba(142, 194, 243, 0.89);
+    border-color: #A0937D;
 }
 
 div .tablamyc th {
     border: solid 2px;
-    border-color: rgba(142, 194, 243, 0.89);
+    border-color: #A0937D;
+    text-align: center;
+    
 }
 div .tablamyc thead {
     font-family: Pulang;
     font-size: 25px;
+    background-image: url(../images/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div.tablamyc tbody {
@@ -472,7 +493,7 @@ div.tablamyc tbody {
 
 /* Footer para todas */
 footer {
-    background-color: #f0d98f8c;
+    background-color: #c0afa4;
     grid-area: footer;
     border-radius: 7px;
 
@@ -483,6 +504,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     padding-left: 10px;
+    align-items: center;
 
 }
 
@@ -497,9 +519,11 @@ footer {
     padding-left: 5px;
 }
 
+
 .contactofooter ul {
     list-style: none;
     padding-left: 5px;
+    width: 193px;
 }
 
 .redesfooter ul {
@@ -512,6 +536,7 @@ footer {
     font-size: 20px;
     margin: 10px;
     color: rgba(255, 255, 255, 0.856);
+    text-align: center;
 }
 
 .navfooterlistas li a {
@@ -536,6 +561,16 @@ footer {
     color: rgb(66, 66, 66);
 }
 
+
+.footerlogo a img{
+    border-radius: 150px;
+}
+
+.crfooter p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.555);
+}
 
 /* Keyframes y animaciones */
 
@@ -819,7 +854,7 @@ footer {
         border: solid 4px;
         border-collapse: collapse;
         width: 75%;
-        border-color: #fadc9c;
+        border-color: #6e6556;
 
     }
 
@@ -827,12 +862,13 @@ footer {
         border: solid 2px;
         font-family: Cherishmoment;
         font-size: 15px;
-        border-color: rgba(142, 194, 243, 0.89);
+        border-color: #A0937D;
     }
 
     div .tablamyc th {
         border: solid 2px;
-        border-color: rgba(142, 194, 243, 0.89);
+        border-color: #A0937D;
+        text-align: center;
     }
 
     div .tablamyc thead {
@@ -1215,7 +1251,7 @@ footer {
         border: solid 4px;
         border-collapse: collapse;
         width: 75%;
-        border-color: #fadc9c;
+        border-color: #6e6556;
 
     }
 
@@ -1223,12 +1259,13 @@ footer {
         border: solid 2px;
         font-family: Cherishmoment;
         font-size: 15px;
-        border-color: rgba(142, 194, 243, 0.89);
+        border-color: #A0937D;
     }
 
     div .tablamyc th {
         border: solid 2px;
-        border-color: rgba(142, 194, 243, 0.89);
+        border-color: #A0937D;
+        text-align: center;
     }
 
     div .tablamyc thead {
@@ -1307,6 +1344,7 @@ footer {
     #h6footer {
         font-family: CherishMoment;
         font-size: 20px;
+        text-align:left;
     }
 
     .navfooterlistas li {

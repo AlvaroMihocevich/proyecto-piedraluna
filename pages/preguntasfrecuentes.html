@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="../css/main.css">
 
@@ -78,52 +80,52 @@
         </header>
         <main>
             <h1 class="h1general animate__pulse">Preguntas Frecuentes</h1>
-            <div class="pfgeneral animate__fadeIn">
+            <div class="pfgeneral">
                 <div class="pflista">
                     <ol>
-                        <li>
-                            Envios y transporte a eleccion del cliente
+                        <li data-aos="fade-right">
+                            Envíos y transporte a eleccion del cliente
                         </li>
-                        <p>
-                            Los envios se realizan una vez acreditado el pago del pedido. Si se acredito antes de las
-                            13hs se despacha en el dia, y si fue pasado ese horario se despacha el dia siguiente.
+                        <p data-aos="fade-right">
+                            Los envíos se realizan una vez acreditado el pago del pedido. Si se acreditó antes de las
+                            13hs se despacha en el día, y si fue pasado ese horario se despacha el día siguiente.
                         </p>
-                        <p>
-                            Nos manejamos principalmente por cadeteria privada o Correo Argentino.
+                        <p data-aos="fade-right">
+                            Utilizamos principalmente cadetería privada o Correo Argentino.
                         </p>
-                        <li>
+                        <li data-aos="fade-right">
                             Pagos
                         </li>
-                        <p>
-                            El pago se solicitara UNICAMENTE después de la CONFIRMACION del pedido por un tema de stock
+                        <p data-aos="fade-in">
+                            El pago se solicitará ÚNICAMENTE después de la CONFIRMACIÓN del pedido por un tema de stock
                             y para que el cliente se quede seguro que el pedido está confirmado y preparado para
                             despachar.
                         </p>
-                        <li>
+                        <li data-aos="fade-right">
                             Cuales son los medios de pago?
                         </li>
-                        <p>
-                            Nos manejamos con Mercado Pago, transferencia bancaria, efectivo.
+                        <p data-aos="fade-in">
+                            Utilizamos Mercado Pago, transferencia bancaria, efectivo.
                         </p>
-                        <li>
+                        <li data-aos="fade-right">
                             Devoluciones o reclamos
                         </li>
-                        <p>
+                        <p data-aos="fade-in">
                             Las devoluciones o reclamos por falla de producto se toman hasta 10 ( diez días ) después de
                             haber recibido el producto.
                         </p>
-                        <p>
+                        <p data-aos="fade-in">
                             Comunicarse al WhatsApp (3513494317) y mandar foto del producto fallado detallando el
                             problema.
                         </p>
-                        <p>
-                            En caso de corresponder se le dara al cliente la opción de agregar el mismo u otro producto
+                        <p data-aos="fade-in">
+                            En caso de corresponder se le dará al cliente la opción de agregar el mismo u otro producto
                             de similar valor para el próximo pedido que se realice (SIN COSTO).
                         </p>
-                        <li>
+                        <li data-aos="fade-right">
                             Cuales son los horarios de atencion y contacto?
                         </li>
-                        <p>
+                        <p data-aos="fade-in">
                             De 08:00 a 23:00 hs, ya que no poseemos un local y todas nuestras consultas son contestadas
                             atraves de los medios de comunicacion, que podes encontrar en <a
                                 href="contacto.html">contacto.</a>
@@ -212,11 +214,36 @@
                 </div>
                 <!-- Fin redes footer -->
             </div>
+            <!-- Copyright etc -->
+            <section class="crfooter divfooter mt-1 mb-3">
+                <div class="mt-2">
+                    <p><i class="fa-solid fa-copyright"></i> Copyright Piedra Luna - 2022</p>
+                </div>
+                <div class="footerlogo mt-2">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpeg" alt="" width="90px">
+                    </a>
+                </div>
+                <div class="crfooter mt-2">
+                    <p>Todos los derechos reservados</p>
+                </div>
+
+            </section>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+
+    <!-- Link a AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init({
+             easing: 'ease',
+             duration: 1000
+         });
+     </script>
 </body>
 
 </html>
