@@ -34,7 +34,6 @@ main {
     padding: 10px;
 
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
-    ;
 
     animation-delay: 1s;
 
@@ -121,6 +120,7 @@ nav {
     padding: 5px;
     grid-area: nav;
     
+    
 
 }
 
@@ -129,6 +129,7 @@ nav ul {
     padding: 1px;
     background-color: #A0937D;
     border-radius: 7px;
+    contain: content;
 }
 
 nav ul li {
@@ -145,7 +146,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform: scale(1.04);
+    transform: scale(1.07);
     background-color: #ee9b9bc9;
 
 }
@@ -210,18 +211,6 @@ nav ul li a:hover {
     max-width: fit-content;
 
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
-    ;
-
-/* 
-
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in;
-
-    animation-name: fade-in-homeopciones;
-    animation-timing-function: ease;
-    animation-duration: 2s; */
 
 }
 
@@ -252,6 +241,36 @@ nav ul li a:hover {
     ;
 }
 
+.botoncatalogo{
+
+    /* background-color: rgb(209, 200, 122); */
+    background-image: url(../images/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Cherishmoment;
+
+}
+
+.dropdowncatalogo{
+    background-color: #c0afa4;
+    font-family: cherishmoment;
+    contain: content;
+
+}
+
+
+.dropdownboton{
+    transition: all;
+    transition-timing-function: ease;
+    
+
+}
+
+.dropdownboton:hover{
+    transform: scale(1.2);
+    background-color: #E7D4B5;
+}
 
 .catalogogeneral {
     margin-bottom: 50px;
@@ -281,6 +300,8 @@ nav ul li a:hover {
     font-family: CherishMoment;
     font-size: 25px;
     text-align: center;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
+    
 
 }
 
@@ -618,7 +639,14 @@ footer {
 }
 
 
-
+/* Boton scroll up */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    
+}
 
 
 
