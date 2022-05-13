@@ -39,11 +39,15 @@
     background-color: rgba(255, 255, 255, 0.712);
     border-radius: 7px;
     max-width: fit-content;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
 
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.05);
+        
     }
 }
 
