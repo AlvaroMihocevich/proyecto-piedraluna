@@ -1,0 +1,112 @@
+footer {
+    background-color: #c0afa4;
+    grid-area: footer;
+    border-radius: 7px;
+}
+
+.divfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    align-items: center;
+
+}
+
+.navfooter {
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+        padding-left: 5px;
+    }
+}
+
+.contactofooter{
+    ul {
+        list-style: none;
+        padding-left: 5px;
+        width: 193px;
+    }
+}
+
+.redesfooter{
+    ul {
+        list-style: none;
+        padding-left: 5px;
+    }
+}
+
+#h6footer {
+    font-family: CherishMoment;
+    font-size: 20px;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.856);
+    text-align: center;
+}
+
+.navfooterlistas{
+    li{
+        a {
+            font-family: Pulang;
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(66, 66, 66);   
+        }
+    }
+}
+
+.contactofooterlistas{
+    li {
+        font-family: Pulang;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+    }
+}
+
+.redesfooterlistas{
+    li{
+        a {
+            font-family: Pulang;
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(66, 66, 66);
+        }
+    }
+}
+
+.footerlogo{
+    a{
+        img{
+            border-radius: 150px;
+        }
+    }
+}
+
+.crfooter{
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.555);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .divfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .divfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

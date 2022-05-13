@@ -1,0 +1,85 @@
+.contacto-mainwrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+#p1consulta {
+    font-family: Pulang;
+    font-size: 30px;
+}
+
+.opcionescontacto{
+    ul{
+        li{
+            font-family: Pulang;
+            font-size: 20px;
+            color: rgb(63, 63, 63);
+        }
+    }
+}
+
+.listaopcionescontacto{
+    a{
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+    }
+}
+
+.h3consulta {
+    font-family: Pulang;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+div{
+    .formconsulta {
+        width: 450px;
+        background-color: hsl(39, 64%, 79%);
+        padding: 10px 20px;
+        border-radius: 7px;
+        margin-bottom: 40px;
+        input, textarea{
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-family: cherishmoment;
+            font-size: 17px;
+            border: none;
+        }
+        textarea {
+            min-height: 100px;
+            max-height: 100px;
+            max-width: 450px;
+        }
+    }
+}
+
+#botonconsulta {
+    background-color: hsl(203, 46%, 74%);
+    padding: 15px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .listaopcionescontacto {
+        margin-top: 0%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .divformconsulta{
+        form{
+            width: 100%;
+        }
+    }
+}

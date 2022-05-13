@@ -1,0 +1,182 @@
+header {
+    background-color: #f0d98f8c;
+
+    grid-area: header;
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+    background-image: url('../images/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.headerwrapper {
+    height: 315px;
+    display: grid;
+    grid-template-areas:
+        "nav logo"
+    ;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.divfotologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+
+}
+
+.fotologo {
+    border-radius: 100px;
+
+}
+
+#nav1{
+    div{
+        a{
+            font-family: CherishMoment;
+            font-size: 50px;
+            text-decoration: none;
+            color: white;
+        }
+        div{
+            a{
+                font-family: CherishMoment;
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        button{
+            margin-right: 100px;
+        }
+    }
+}
+
+nav{
+    padding: 5px;
+    grid-area: nav;
+    ul{
+        margin: 0;
+        padding: 1px;
+        background-color: $color2;
+        border-radius: 7px;
+        contain: content;
+        li{
+            font-family: CherishMoment;
+            font-size: 30px;
+
+            list-style: none;
+            border-radius: 7px;
+
+            transition: all;
+            transition-delay: 0.1s;
+            transition-duration: .8s;
+            transition-timing-function: ease;
+
+            &:hover{
+                transform: scale(1.07);
+                background-color: #ee9b9bc9;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+
+                transition: all;
+
+                &:hover{
+                    color: beige;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #nav2 {
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 280px;
+        grid-area: header;
+    }
+
+    .headerwrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divfotologo {
+        text-align: center;
+        grid-area: logo;
+    }
+
+    .fotologo {
+        width: 200px;
+    }
+
+    #nav1 {
+        display: none !important;
+    }
+
+    nav {
+        padding: 5px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        grid-area: nav;
+
+        ul{
+            li{
+                display: inline-block;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: CherishMoment;
+                font-size: 30px;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* Ajustes media queries */
+
+@media screen and (min-width: 0px)and (max-width: 1024px) {
+    #nav2 {
+        display: none !important;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 633px) {
+    header {
+        height: 385px;
+    }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1024px){
+    #nav2{
+        display: none !important; 
+    }
+}
+

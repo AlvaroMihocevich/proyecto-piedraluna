@@ -1,0 +1,32 @@
+@import "variables";
+@import "fuentes";
+@import "animaciones";
+@import "header";
+@import "index";
+@import "productos";
+@import "contacto";
+@import "materialesycuidados";
+@import "preguntasfrecuentes";
+@import "footer";
+
+
+body {
+    background-color: $color1;
+}
+
+main {
+    grid-area: main;
+    margin-bottom: 50px;
+}
+
+
+.h1general {
+    font-family: CherishMoment;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
+
+    animation-delay: 1s;
+}

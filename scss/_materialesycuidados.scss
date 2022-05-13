@@ -1,0 +1,49 @@
+.myc-mainwrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+.divtablamyc {
+    display: flex;
+    justify-content: center;
+
+    .tablamyc {
+        border: solid 4px;
+        border-collapse: collapse;
+        width: 75%;
+        border-color: #6e6556;
+        
+        td {
+            border: solid 2px;
+            font-family: Cherishmoment;
+            font-size: 15px;
+            border-color: $color2;
+        }
+
+        th {
+            border: solid 2px;
+            border-color: $color2;
+            text-align: center;
+            
+        }
+
+        thead {
+            font-family: Pulang;
+            font-size: 25px;
+            background-image: url(../images/fondo1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        tbody {
+            font-family: Cafematcha;
+            font-size: 15px;
+        }
+    
+    }
+}
+
