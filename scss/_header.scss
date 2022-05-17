@@ -8,11 +8,12 @@ header {
     background-image: url('../images/fondo2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
 
 .headerwrapper {
-    height: 315px;
+    height: 387px;
     display: grid;
     grid-template-areas:
         "nav logo"
@@ -40,19 +41,26 @@ header {
             font-family: CherishMoment;
             font-size: 50px;
             text-decoration: none;
-            color: white;
+            color: $color2;
         }
         div{
-            a{
-                font-family: CherishMoment;
-                font-size: 20px;
-                text-decoration: none;
-                color: white;
+            ul{
+                width: 120px;
+                text-align: center;
+
+                a{
+                    font-family: CherishMoment;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
         button{
             margin-right: 100px;
         }
+
+
     }
 }
 
@@ -65,6 +73,7 @@ nav{
         background-color: $color2;
         border-radius: 7px;
         contain: content;
+
         li{
             font-family: CherishMoment;
             font-size: 30px;
@@ -73,13 +82,13 @@ nav{
             border-radius: 7px;
 
             transition: all;
-            transition-delay: 0.1s;
-            transition-duration: .8s;
+            transition-duration: .5s;
             transition-timing-function: ease;
 
+            display: inline-block;
+            position: relative;
             &:hover{
                 transform: scale(1.07);
-                background-color: #ee9b9bc9;
             }
             a{
                 text-decoration: none;
@@ -88,12 +97,29 @@ nav{
                 transition: all;
 
                 &:hover{
-                    color: beige;
+                    color: $color1;
+                }
+                &:after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: $color1;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+                &:hover:after{
+                    width: 100%; 
+                    left: 0
                 }
             }
         }
     }
 }
+
 
 
 

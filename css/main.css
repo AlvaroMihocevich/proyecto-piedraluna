@@ -48,6 +48,10 @@
   font-family: Pulang;
   src: url(../fuentes/pulang.ttf); }
 
+@font-face {
+  font-family: cream;
+  src: url(../fuentes/cream.ttf); }
+
 header {
   background-color: #f0d98f8c;
   grid-area: header;
@@ -58,7 +62,7 @@ header {
   background-size: cover; }
 
 .headerwrapper {
-  height: 315px;
+  height: 387px;
   display: grid;
   grid-template-areas: "nav logo";
   grid-template-columns: 1fr 2fr; }
@@ -76,13 +80,16 @@ header {
   font-family: CherishMoment;
   font-size: 50px;
   text-decoration: none;
-  color: white; }
+  color: #A0937D; }
 
-#nav1 div div a {
-  font-family: CherishMoment;
-  font-size: 20px;
-  text-decoration: none;
-  color: white; }
+#nav1 div div ul {
+  width: 120px;
+  text-align: center; }
+  #nav1 div div ul a {
+    font-family: CherishMoment;
+    font-size: 20px;
+    text-decoration: none;
+    color: white; }
 
 #nav1 div button {
   margin-right: 100px; }
@@ -102,18 +109,32 @@ nav {
       list-style: none;
       border-radius: 7px;
       transition: all;
-      transition-delay: 0.1s;
-      transition-duration: .8s;
-      transition-timing-function: ease; }
+      transition-duration: .5s;
+      transition-timing-function: ease;
+      display: inline-block;
+      position: relative; }
       nav ul li:hover {
-        transform: scale(1.07);
-        background-color: #ee9b9bc9; }
+        transform: scale(1.07); }
       nav ul li a {
         text-decoration: none;
         color: white;
         transition: all; }
         nav ul li a:hover {
-          color: beige; }
+          color: #E7D4B5; }
+        nav ul li a:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: #E7D4B5;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0; }
+        nav ul li a:hover:after {
+          width: 100%;
+          left: 0; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #nav2 {
@@ -197,6 +218,74 @@ nav {
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548)); }
   .homeopciones:hover {
     transform: scale(1.05); }
+  .homeopciones span {
+    display: inline-block;
+    position: relative; }
+    .homeopciones span:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #A0937D;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0; }
+    .homeopciones span:hover:after {
+      width: 100%;
+      left: 0; }
+
+#cardindex {
+  width: 270px;
+  contain: content;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548)); }
+  #cardindex img {
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    filter: blur(1px); }
+  #cardindex:hover img {
+    transform: scale(1.1);
+    filter: blur(0.2px); }
+  #cardindex div {
+    text-align: center; }
+    #cardindex div h5 {
+      background-color: rgba(231, 211, 191, 0.452);
+      font-family: cafematcha;
+      color: black;
+      font-size: 50px;
+      width: fit-content;
+      border-radius: 7px;
+      contain: content;
+      display: inline-block;
+      position: relative; }
+      #cardindex div h5:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #E7D4B5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0; }
+      #cardindex div h5:hover:after {
+        width: 100%;
+        left: 0; }
+    #cardindex div #h5index1 {
+      left: 50px; }
+    #cardindex div #h5index2 {
+      left: 65px; }
+    #cardindex div #h5index3 {
+      left: 56px; }
+    #cardindex div #h5index4 {
+      left: 75px; }
+    #cardindex div #h5index5 {
+      left: 40px; }
+    #cardindex div #h5index6 {
+      left: 80px; }
 
 .ofertasindex p {
   font-family: CafeMatcha;
@@ -247,6 +336,15 @@ nav {
   flex-direction: row;
   justify-content: center;
   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.281)); }
+
+#cardcatalogo {
+  width: 250px; }
+  #cardcatalogo div {
+    text-align: center;
+    background-color: #A0937D;
+    font-family: cream; }
+    #cardcatalogo div a {
+      background-color: #92be92; }
 
 .producto {
   display: flex;
@@ -317,7 +415,7 @@ nav {
 
 div .formconsulta {
   width: 450px;
-  background-color: #ecd4a7;
+  background-color: #F6E6CB;
   padding: 10px 20px;
   border-radius: 7px;
   margin-bottom: 40px; }
@@ -456,7 +554,10 @@ footer {
   font-family: Pulang;
   font-size: 15px;
   text-decoration: none;
-  color: #424242; }
+  color: #424242;
+  transition: all; }
+  .navfooterlistas li a:hover {
+    color: #F6E6CB; }
 
 .contactofooterlistas li {
   font-family: Pulang;
@@ -467,7 +568,10 @@ footer {
   font-family: Pulang;
   font-size: 15px;
   text-decoration: none;
-  color: #424242; }
+  color: #424242;
+  transition: all; }
+  .redesfooterlistas li a:hover {
+    color: #F6E6CB; }
 
 .footerlogo a img {
   border-radius: 150px; }

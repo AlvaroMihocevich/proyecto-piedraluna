@@ -49,7 +49,109 @@
         transform: scale(1.05);
         
     }
+
+    span{
+        display: inline-block;
+        position: relative;
+        
+        &:after{
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $color2;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        &:hover:after{
+            width: 100%; 
+            left: 0
+        }
+    }
 }
+
+
+
+#cardindex{
+    width: 270px;
+    contain: content;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.548));
+
+
+
+    img{
+        transition: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        filter: blur(1px);
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+            filter: blur(0.2px);
+        }
+    }
+    div{
+        text-align: center;
+        h5{
+            background-color: rgba(231, 211, 191, 0.452);
+            font-family: cafematcha;
+            color: black;
+            font-size: 50px;
+            width: fit-content;
+            border-radius: 7px;
+            contain: content;
+
+
+            display: inline-block;
+            position: relative;
+
+            
+            &:after{
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $color1;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover:after{
+                width: 100%; 
+                left: 0
+            }
+        }
+
+        #h5index1{
+            left: 50px;
+        }
+        #h5index2{
+            left: 65px;
+        }   
+        #h5index3{
+            left: 56px;
+        }
+        #h5index4{
+            left: 75px;
+        }
+        #h5index5{
+            left: 40px;
+        }
+        #h5index6{
+            left: 80px;
+        }
+    }
+
+}
+
+
+
 
 .ofertasindex{
     p {
@@ -60,7 +162,6 @@
         border-radius: 7px;
     
         text-align: center;
-    
     }
 }
 

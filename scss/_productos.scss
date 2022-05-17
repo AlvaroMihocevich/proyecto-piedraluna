@@ -43,6 +43,20 @@
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.281));
 }
 
+#cardcatalogo{
+    width: 250px;
+    div{
+        text-align: center;
+        background-color: $color2;
+        font-family: cream;
+        a{
+            background-color: rgb(146, 190, 146);
+        }
+    }
+}
+
+
+
 .producto{
     display: flex;
     flex-direction: column;
