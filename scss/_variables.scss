@@ -2,3 +2,48 @@ $color1:#E7D4B5;
 $color2:#A0937D;
 $color3:#F6E6CB;
 $color4:#E3CDC1;
+
+// Maps redes footer
+$colores-redes:(
+    instagram: rgb(214, 115, 209), 
+    facebook: rgb(60, 86, 201), 
+    tiktok: rgb(54, 54, 53)
+);
+
+
+@each $red, $color in $colores-redes{
+    .red-#{$red} {
+        color: $color;
+    }
+
+}
+
+
+// Mixins
+@mixin display-flex($flex-dir){
+    display :flex;
+    flex-direction: $flex-dir;
+}
+
+// extend
+.pflista-ol-items{
+    padding: 10px;
+    max-width: fit-content;
+    border-radius: 7px;
+}
+
+.pflista-ol-li{
+    @extend .pflista-ol-items;
+    font-family: CherishMoment;
+    font-size: 35px;
+    background-color: hsla(0, 24%, 59%, 0.74);
+    margin-bottom: 10px;
+}
+
+.pflista-ol-p{
+    @extend .pflista-ol-items;
+    font-family: pulang;
+    font-size: 20px;
+    width: 800px;
+    background-color: hsla(39, 34%, 54%, 0.63);
+}

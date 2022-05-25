@@ -20,7 +20,7 @@
         td {
             border: solid 2px;
             font-family: Cherishmoment;
-            font-size: 15px;
+            font-size: 25px;
             border-color: $color2;
         }
 
@@ -34,14 +34,15 @@
         thead {
             font-family: Pulang;
             font-size: 25px;
-            background-image: url(../images/fondo1.jpeg);
+            background-image: url(../images/fondo2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         tbody {
             font-family: Cafematcha;
-            font-size: 15px;
+            font-size: 18px;
+            background-color: $color4;
         }
     
     }

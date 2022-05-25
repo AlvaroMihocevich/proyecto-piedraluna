@@ -1,3 +1,29 @@
+.red-instagram {
+  color: #d673d1; }
+
+.red-facebook {
+  color: #3c56c9; }
+
+.red-tiktok {
+  color: #363635; }
+
+.pflista-ol-items, .pflista-ol-li, .pflista-ol-p {
+  padding: 10px;
+  max-width: fit-content;
+  border-radius: 7px; }
+
+.pflista-ol-li {
+  font-family: CherishMoment;
+  font-size: 35px;
+  background-color: rgba(176, 125, 125, 0.74);
+  margin-bottom: 10px; }
+
+.pflista-ol-p {
+  font-family: pulang;
+  font-size: 20px;
+  width: 800px;
+  background-color: rgba(178, 150, 98, 0.63); }
+
 /* Keyframes y animaciones */
 @keyframes fade-in-homeopciones {
   0% {
@@ -57,23 +83,20 @@ header {
   grid-area: header;
   border-radius: 7px;
   margin-bottom: 20px;
+  padding-top: 10px;
   background-image: url("../images/fondo2.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
-
-.headerwrapper {
-  height: 387px;
-  display: grid;
-  grid-template-areas: "nav logo";
-  grid-template-columns: 1fr 2fr; }
+  background-size: cover;
+  background-position: center center; }
 
 .divfotologo {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: logo; }
+  padding-bottom: 10px; }
 
 .fotologo {
+  width: 130px;
   border-radius: 100px; }
 
 #nav1 div a {
@@ -83,6 +106,9 @@ header {
   color: #A0937D; }
 
 #nav1 div div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 120px;
   text-align: center; }
   #nav1 div div ul a {
@@ -91,8 +117,8 @@ header {
     text-decoration: none;
     color: white; }
 
-#nav1 div button {
-  margin-right: 100px; }
+#nav1 div .navbar-collapse ul {
+  width: 128px; }
 
 nav {
   padding: 5px;
@@ -136,11 +162,7 @@ nav {
           width: 100%;
           left: 0; }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #nav2 {
-    display: none !important; } }
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   header {
     height: 280px;
     grid-area: header; }
@@ -152,7 +174,7 @@ nav {
     grid-area: logo; }
   .fotologo {
     width: 200px; }
-  #nav1 {
+  .headerwrapper1 {
     display: none !important; }
   nav {
     padding: 5px;
@@ -171,16 +193,8 @@ nav {
         text-decoration: none; } }
 
 /* Ajustes media queries */
-@media screen and (min-width: 0px) and (max-width: 1024px) {
-  #nav2 {
-    display: none !important; } }
-
-@media screen and (min-width: 320px) and (max-width: 633px) {
-  header {
-    height: 385px; } }
-
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-  #nav2 {
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .headerwrapper2 {
     display: none !important; } }
 
 .index-mainwrapper {
@@ -328,6 +342,12 @@ nav {
     transform: scale(1.2);
     background-color: #E7D4B5; }
 
+#botoncategorias {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 15px; }
+
 .catalogogeneral {
   margin-bottom: 50px; }
 
@@ -461,7 +481,7 @@ div .formconsulta {
     .divtablamyc .tablamyc td {
       border: solid 2px;
       font-family: Cherishmoment;
-      font-size: 15px;
+      font-size: 25px;
       border-color: #A0937D; }
     .divtablamyc .tablamyc th {
       border: solid 2px;
@@ -470,12 +490,13 @@ div .formconsulta {
     .divtablamyc .tablamyc thead {
       font-family: Pulang;
       font-size: 25px;
-      background-image: url(../images/fondo1.jpeg);
+      background-image: url(../images/fondo2.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
     .divtablamyc .tablamyc tbody {
       font-family: Cafematcha;
-      font-size: 15px; }
+      font-size: 18px;
+      background-color: #E3CDC1; }
 
 .pf-mainwrapper {
   display: grid;
@@ -490,21 +511,6 @@ div .formconsulta {
   width: 300px; }
   .pflista ol {
     padding-left: 20px; }
-    .pflista ol li {
-      font-family: CherishMoment;
-      font-size: 20px;
-      padding: 10px;
-      background-color: rgba(176, 125, 125, 0.74);
-      max-width: fit-content;
-      border-radius: 7px;
-      margin-bottom: 10px; }
-    .pflista ol p {
-      font-family: pulang;
-      font-size: 15px;
-      width: 800px;
-      background-color: rgba(178, 150, 98, 0.63);
-      max-width: fit-content;
-      border-radius: 7px; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .pflista {
@@ -568,7 +574,6 @@ footer {
   font-family: Pulang;
   font-size: 15px;
   text-decoration: none;
-  color: #424242;
   transition: all; }
   .redesfooterlistas li a:hover {
     color: #F6E6CB; }
