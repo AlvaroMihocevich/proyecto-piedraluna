@@ -10,18 +10,19 @@
 .divtablamyc {
     display: flex;
     justify-content: center;
-
     .tablamyc {
         border: solid 4px;
         border-collapse: collapse;
         width: 75%;
         border-color: #6e6556;
+        border-style: solid;
         
         td {
             border: solid 2px;
             font-family: Cherishmoment;
             font-size: 25px;
             border-color: $color2;
+            text-align: center;
         }
 
         th {
@@ -34,7 +35,7 @@
         thead {
             font-family: Pulang;
             font-size: 25px;
-            background-image: url(../images/fondo2.jpg);
+            background-image: url(../../images/fondo2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }

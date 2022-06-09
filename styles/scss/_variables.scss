@@ -2,6 +2,7 @@ $color1:#E7D4B5;
 $color2:#A0937D;
 $color3:#F6E6CB;
 $color4:#E3CDC1;
+$color5: #c59f9f;
 
 // Maps redes footer
 $colores-redes:(
@@ -46,4 +47,24 @@ $colores-redes:(
     font-size: 20px;
     width: 800px;
     background-color: hsla(39, 34%, 54%, 0.63);
+}
+
+.navbar-light  {
+    .navbar-toggler{
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
 }
