@@ -20,6 +20,28 @@
     }
 }
 
+// extend
+.pflista-ol-items{
+    padding: 10px;
+    max-width: fit-content;
+    border-radius: 7px;
+}
+
+.pflista-ol-li{
+    @extend .pflista-ol-items;
+    font-family: CherishMoment;
+    font-size: 35px;
+    background-color: hsla(0, 24%, 59%, 0.74);
+    margin-bottom: 10px;
+}
+
+.pflista-ol-p{
+    @extend .pflista-ol-items;
+    font-family: pulang;
+    font-size: 20px;
+    width: 800px;
+    background-color: hsla(39, 34%, 54%, 0.63);
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .pflista {
         width: 500px;

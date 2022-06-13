@@ -108,48 +108,83 @@
         <main>
             <h1 class="h1general animate__pulse">Materiales y sus cuidados</h1>
             <!-- Inicio tabla MyC -->
-            <div class="divtablamyc animate__fadeIn">
-                <table class="tablamyc">
-                    <thead>
-                        <th scope="col">Materiales</td>
-                        <th scope="col">Cuidados</td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Acero quirurgico</td>
-                            <td>
-                                <span>El Acero Quirúrgico es un material que puede ser expuesto al agua y al perfume sin
-                                    alterar su color original. Con respecto al Acero Quirúrgico Blanco o dorado,
-                                    considerando que también tiene un baño, te recomendamos alejarlo del perfume. Cabe
-                                    mencionar que es un material más duradero que el Metal Niquelado.</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Plata 925</td>
-                            <td><span>Recordá guardar tus accesorios de plata en un lugar oscuro. Este material es
-                                inalterable.
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Metal niquelado</td>
-                            <td><span>
-                                El material de las cadenas y engarces que son de metal niquelado plateado o dorado, es
-                                decir Bijouterie, tiene una vida útil dependiendo del uso del cliente.</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Fundicion</td>
-                            <td><span>
-                                Es un material mezcla de hierro, carbono y silicio. Tiene una durabilidad considerable a
-                                su uso. Perdura mucho más que el niquel. Estos dijes se pueden limpiar con un paño seco.</span>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
+            <section class="myc1">
+                <div class="divtablamyc animate__fadeIn">
+                    <table class="tablamyc">
+                        <thead>
+                            <th scope="col">Materiales</td>
+                            <th scope="col">Cuidados</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Acero quirurgico</td>
+                                <td>
+                                    <span>El Acero Quirúrgico es un material que puede ser expuesto al agua y al perfume sin
+                                        alterar su color original. Con respecto al Acero Quirúrgico Blanco o dorado,
+                                        considerando que también tiene un baño, te recomendamos alejarlo del perfume. Cabe
+                                        mencionar que es un material más duradero que el Metal Niquelado.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Plata 925</td>
+                                <td><span>Recordá guardar tus accesorios de plata en un lugar oscuro. Este material es
+                                    inalterable.
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Metal niquelado</td>
+                                <td><span>
+                                    El material de las cadenas y engarces que son de metal niquelado plateado o dorado, es
+                                    decir Bijouterie, tiene una vida útil dependiendo del uso del cliente.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fundicion</td>
+                                <td><span>
+                                    Es un material mezcla de hierro, carbono y silicio. Tiene una durabilidad considerable a
+                                    su uso. Perdura mucho más que el niquel. Estos dijes se pueden limpiar con un paño seco.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
             <!-- Fin tabla MyC -->
+            <section class="myc2">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center " data-aos="fade-in">
+                        <span class="mb-3 p-1">Acero quirurgico</span>
+                        <p class="text-center mx-3 mb-4 fw-bolder">
+                            El Acero Quirúrgico es un material que puede ser expuesto al agua y al perfume sin
+                            alterar su color original. Con respecto al Acero Quirúrgico Blanco o dorado,
+                            considerando que también tiene un baño, te recomendamos alejarlo del perfume. Cabe
+                            mencionar que es un material más duradero que el Metal Niquelado.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center " data-aos="fade-in">
+                        <span class="mb-3 p-1">Plata 925</span>
+                        <p class="text-center mx-3 mb-4 fw-bolder">
+                            Recordá guardar tus accesorios de plata en un lugar oscuro. Este material es
+                            inalterable.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center " data-aos="fade-in">
+                        <span class="mb-3 p-1">Metal niquelado</span>
+                        <p class="text-center mx-3 mb-4 fw-bolder">
+                            El material de las cadenas y engarces que son de metal niquelado plateado o dorado, es
+                            decir Bijouterie, tiene una vida útil dependiendo del uso del cliente.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center" data-aos="fade-in">
+                        <span class="mb-3 p-1">Fundicion</span>
+                        <p class="text-center mx-3 mb-4 fw-bolder">
+                            Es un material mezcla de hierro, carbono y silicio. Tiene una durabilidad considerable a
+                            su uso. Perdura mucho más que el niquel. Estos dijes se pueden limpiar con un paño seco.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <!-- Boton volver arriba -->
             <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
                 <i class="fa-solid fa-circle-arrow-up"></i>
@@ -267,7 +302,9 @@
     <script>
         AOS.init({
             easing: 'ease',
-            duration: 1000
+            duration: 1000,
+            offset: 100,
+            once: true,
         });
     </script>
 </body>

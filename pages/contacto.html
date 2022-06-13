@@ -108,16 +108,16 @@
         <h1 class="h1general animate__pulse">Contacto</h1>
         <section class="container-fluid">
             <div class="row">
-                <div class="opcionescontacto col-sm-4 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
+                <div class="opcionescontacto col-sm-4 col-md-6 col-lg-6 col-xl-6 d-flex flex-column align-items-center" data-aos="fade-right">
                     <p id="p1consulta">Te dejamos algunas de las formas de contacto!</p>
                     <ul class="listaopcionescontacto ">
                         <li>
                             <a href="https://www.instagram.com/piedraluna___/">
-                                <i class="fa-brands fa-instagram">
-                                </i>Seguinos en Instagram</a>
+                                <i class="fa-brands fa-instagram red-instagram">
+                                </i> Seguinos en <span class="red-instagram">Instagram</span></a>
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-phone red-telefono"></i>
                             Teléfono: 3513494317
                         </li>
                         <li>
@@ -126,15 +126,15 @@
                         </li>
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100073533932417">
-                                <i class="fa-brands fa-facebook">
-                                </i> Hablanos por Facebook</a>
+                                <i class="fa-brands fa-facebook red-facebook">
+                                </i> Hablanos por <span class="red-facebook">Facebook</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="divformconsulta col-sm-8 col-md-6 col-lg-6 col-xl-6 d-flex flex-row justify-content-end"
                     data-aos="fade-left">
                     <form action="" class="formconsulta">
-                        <h3 class="h3consulta">Mandanos tu consulta!</h5>
+                        <h3 class="h3consulta">Mandanos tu consulta!</h3>
                             <input type="text" name="Nombre" placeholder="Nombre">
                             <input type="text" name="Correo electronico" placeholder="Correo electronico">
                             <input type="number" name="Telefono" placeholder="Telefono">
@@ -236,7 +236,7 @@
             <!-- Fin redes footer -->
         </div>
         <!-- Copyright etc -->
-        <section class="crfooter divfooter mt-1 mb-3">
+        <section class="crfooter divfooter mt-1 pb-3">
             <div class="mt-2">
                 <p><i class="fa-solid fa-copyright"></i> Copyright Piedra Luna - 2022</p>
             </div>
@@ -266,7 +266,9 @@
     <script>
         AOS.init({
             easing: 'ease',
-            duration: 1000
+            duration: 1000,
+            offset: 100,
+            once: true,
         });
     </script>
 

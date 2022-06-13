@@ -8,7 +8,8 @@ $color5: #c59f9f;
 $colores-redes:(
     instagram: rgb(214, 115, 209), 
     facebook: rgb(60, 86, 201), 
-    tiktok: rgb(54, 54, 53)
+    tiktok: rgb(54, 54, 53),
+    telefono: rgb(137, 204, 128),
 );
 
 
@@ -26,28 +27,7 @@ $colores-redes:(
     flex-direction: $flex-dir;
 }
 
-// extend
-.pflista-ol-items{
-    padding: 10px;
-    max-width: fit-content;
-    border-radius: 7px;
-}
 
-.pflista-ol-li{
-    @extend .pflista-ol-items;
-    font-family: CherishMoment;
-    font-size: 35px;
-    background-color: hsla(0, 24%, 59%, 0.74);
-    margin-bottom: 10px;
-}
-
-.pflista-ol-p{
-    @extend .pflista-ol-items;
-    font-family: pulang;
-    font-size: 20px;
-    width: 800px;
-    background-color: hsla(39, 34%, 54%, 0.63);
-}
 
 .navbar-light  {
     .navbar-toggler{

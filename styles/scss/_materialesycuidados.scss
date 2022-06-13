@@ -7,6 +7,7 @@
     ;
 }
 
+
 .divtablamyc {
     display: flex;
     justify-content: center;
@@ -46,6 +47,40 @@
             background-color: $color4;
         }
     
+    }
+}
+
+.myc2{
+    div{
+        div{
+            span{
+                background-color: $color2;
+                font-family: pulang;
+                font-size: 30px;
+                border-radius: 10px;
+            }   
+            p{
+                background-color: $color4;
+                font-family: coffe;
+                font-size: 20px;
+                border-radius: 10px;
+                
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 778px){
+    .myc1{
+        display: none !important;
+    }
+    
+}
+
+@media screen and (min-width: 778px){
+    .myc2{
+        display: none !important;
     }
 }
 
