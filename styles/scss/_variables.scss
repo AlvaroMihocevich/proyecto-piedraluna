@@ -20,6 +20,19 @@ $colores-redes:(
 
 }
 
+$variable-stock:(
+    si: rgb(115, 214, 123), 
+    no: rgb(201, 60, 60), 
+);
+
+
+@each $var, $color in $variable-stock{
+    .stock-#{$var} {
+        color: $color;
+    }
+
+}
+
 
 // Mixins
 @mixin display-flex($flex-dir){

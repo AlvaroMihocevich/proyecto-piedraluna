@@ -1,0 +1,84 @@
+.catalogo-mainwrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+
+.catalogo-producto-wrapper{
+    width: 90% !important;
+    div{
+        .catizq{
+            img{
+                width: 400px;
+                margin-right: -50px;
+                z-index: 2;
+                border-radius: 10px 5px 5px 10px;
+            }
+        }
+        .catder{
+            background-color: $color2;
+            border-radius: 10px;
+            width: 350px;
+            height: 300px;
+            z-index: 1;
+            span{
+                &:nth-child(1){
+                    color: white;
+                    font-family: cream;
+                    font-size: 25px;
+                }
+                &:nth-child(2){
+                    font-family: cafematcha;
+                    font-size: 25px;
+                }
+                &:nth-child(3){
+                    font-family: cream;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+    .catizq{
+        img{
+            width: 300px !important;
+            border-radius: 10px 10px 5px 5px  !important;
+        }
+        
+        margin-left: -25px;
+    }
+    .catder{
+        margin:0;
+        margin-top: -50px;
+        padding-top: 40px;
+        max-width: 250px;
+        height: 300px !important;
+        span{
+            padding-left: 30px !important;
+            padding-right: 10px !important;
+            &:nth-child(1){
+                color: white;
+                font-family: cream;
+                font-size: 15px;
+                padding-top: 40px !important;
+            }
+            &:nth-child(2){
+                font-family: cafematcha;
+                font-size: 20px;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+            }
+            &:nth-child(3){
+                font-family: cream;
+                font-size: 15px;
+                padding-bottom: 50px !important;
+            }
+        }
+    }
+}

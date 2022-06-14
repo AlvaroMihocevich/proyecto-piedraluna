@@ -10,6 +10,12 @@
 .red-telefono {
   color: #89cc80; }
 
+.stock-si {
+  color: #73d67b; }
+
+.stock-no {
+  color: #c93c3c; }
+
 .navbar-light .navbar-toggler {
   color: white;
   border-color: white; }
@@ -662,6 +668,64 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around; } }
+
+.catalogo-mainwrapper {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+.catalogo-producto-wrapper {
+  width: 90% !important; }
+  .catalogo-producto-wrapper div .catizq img {
+    width: 400px;
+    margin-right: -50px;
+    z-index: 2;
+    border-radius: 10px 5px 5px 10px; }
+  .catalogo-producto-wrapper div .catder {
+    background-color: #A0937D;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    z-index: 1; }
+    .catalogo-producto-wrapper div .catder span:nth-child(1) {
+      color: white;
+      font-family: cream;
+      font-size: 25px; }
+    .catalogo-producto-wrapper div .catder span:nth-child(2) {
+      font-family: cafematcha;
+      font-size: 25px; }
+    .catalogo-producto-wrapper div .catder span:nth-child(3) {
+      font-family: cream;
+      font-size: 20px; }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .catizq {
+    margin-left: -25px; }
+    .catizq img {
+      width: 300px !important;
+      border-radius: 10px 10px 5px 5px  !important; }
+  .catder {
+    margin: 0;
+    margin-top: -50px;
+    padding-top: 40px;
+    max-width: 250px;
+    height: 300px !important; }
+    .catder span {
+      padding-left: 30px !important;
+      padding-right: 10px !important; }
+      .catder span:nth-child(1) {
+        color: white;
+        font-family: cream;
+        font-size: 15px;
+        padding-top: 40px !important; }
+      .catder span:nth-child(2) {
+        font-family: cafematcha;
+        font-size: 20px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important; }
+      .catder span:nth-child(3) {
+        font-family: cream;
+        font-size: 15px;
+        padding-bottom: 50px !important; } }
 
 body {
   background-color: #E7D4B5; }
