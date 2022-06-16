@@ -6,22 +6,186 @@
         "footer"
     ;
 }
+.inicio-index-wrapper{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    div{
+        .index-izq{
+            display: flex;
+            justify-content: center;
+            background-color: $color2;
+            .presentacion-index{
+                width: 400px;
+                height: 400px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-right: 50px;
+                .puto1{
+                    h1{
+                        font-family: pulang;
+                        font-size: 55px;
+                        z-index: 2;
+                    }
+                }
+                .puto2{
+                    img{
+                        width: 450px;
+                        z-index: 1;
 
-#newin{
-    h1{
-        background-color: $color5;
-        text-align: center;
-        width: 200px;
-        border-radius: 20px;
+                        margin-top: 0;
+                    }
+                }
+                .puto3{
+                    span{
+                        z-index: 2;
+                        font-family: coffe;
+                        font-size: 30px;
+                        font-weight: bolder;
+                        width: 340px;
+                        border-radius: 10px;
+                        padding: 5px;
+                        font-style: italic;
+                        color: #695536;
+
+    
+                    }
+                }
+                
+            }
+        }
+        .index-der{
+            background-color: $color2;
+            padding-right: 0 !important;
+        }
+    }
+}
+.grid-item{
+
+    display: flex;
+}
+.grid-item:nth-of-type(1){
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    place-self: center;
+}
+.grid-item:nth-of-type(2){
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    place-self: left;
+
+}
+.grid-item:nth-of-type(3){
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    place-self: center;
+    margin-left: -135px;
+
+}
+.carousel{
+    background-color: $color2;
+    padding: 10px 0px 10px 10px;
+}
+.carousel-item{
+    img{
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .inicio-index-wrapper{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        div{
+            .index-izq{
+                display: flex;
+                justify-content: center;
+
+                .presentacion-index{
+                    margin-left: 80px;
+                    .puto1{
+                        h1{
+                            font-family: pulang;
+                            font-size: 55px;
+                            z-index: 2;
+                        }
+                    }
+                    .puto2{
+                        img{
+                            width: 350px;
+                            z-index: 1;
+                            border-radius: 7px;
+                            margin-top: 0;
+                        }
+                    }
+                    .puto3{
+                        span{
+                            z-index: 2;
+                            font-family: coffe;
+                            font-size: 30px;
+                            font-weight: bolder;
+                            width: 330px;
+                            border-radius: 10px;
+                            padding: 5px;
+    
+        
+                        }
+                    }
+                    
+                }
+            }
+            .index-der{
+                padding-right: 0 !important;
+            }
+        }
+        .carousel-item{
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+    .carousel{
+        background-color: $color2;
+        padding: 10px;
+    }
+    .carousel-item{
+        img{
+            border-radius: 10px;
+        }
     }
     
 }
+.lineas{
+    .linea1{
+        margin-top: 20px;
+        height: 8.5px;
+        background-color: $color2;
+        width: 85%;
+        border-radius: 999999px;
+        
+    }
+    .linea2{
+        margin-top: 20px;
+        height: 7px;
+        background-color: $color2;
+        width: 75%;
+        border-radius: 999999px;
+    }
 
-.carouselindex {
-    margin-top: 20px;
-    margin-bottom: 40px;
-
+    .linea3{
+        margin-top: 20px;
+        height: 5px;
+        background-color: $color2;
+        width: 65%;
+        border-radius: 999999px;
+        margin-bottom: 15px;
+    }
 }
+
+
+
+
+
 
 .divhomeopciones {
     font-family: CafeMatcha;
