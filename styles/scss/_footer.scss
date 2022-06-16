@@ -27,8 +27,12 @@ footer {
 .contactofooter{
     ul {
         list-style: none;
-        padding-left: 5px;
-        width: 193px;
+        width: 235px;
+        li {
+            font-family: Pulang;
+            font-size: 18px;
+            color: rgb(66, 66, 66);
+        }
     }
 }
 
@@ -41,7 +45,7 @@ footer {
 
 #h6footer {
     font-family: CherishMoment;
-    font-size: 20px;
+    font-size: 28px;
     margin: 10px;
     color: rgba(255, 255, 255, 0.856);
     text-align: center;
@@ -51,7 +55,7 @@ footer {
     li{
         a {
             font-family: Pulang;
-            font-size: 15px;
+            font-size: 18px;
             text-decoration: none;
             color: rgb(66, 66, 66);  
             transition: all;
@@ -63,19 +67,12 @@ footer {
     }
 }
 
-.contactofooterlistas{
-    li {
-        font-family: Pulang;
-        font-size: 15px;
-        color: rgb(66, 66, 66);
-    }
-}
 
 .redesfooterlistas{
     li{
         a {
             font-family: Pulang;
-            font-size: 15px;
+            font-size: 18px;
             text-decoration: none;
             transition: all;
             

@@ -5,6 +5,31 @@
         "main"
         "footer";
 }
+.contacto-main{
+    background-image: url(../../images/mujerdefondo3.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50px ;
+}
+@media screen and (max-width:425px) {
+    .contacto-main{
+        background-position: -30px -200px;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .contacto-main{
+        background-position: 35px -240px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .contacto-main{
+        background-position: 0px;
+    }
+    
+}
 
 #p1consulta {
     font-family: Pulang;
@@ -21,6 +46,12 @@
             font-size: 25px;
             color: rgb(63, 63, 63);
             filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.250));
+            list-style: none;
+            background-color: rgba(240, 248, 255, 0.192);
+            border-radius: 10px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            width: 310px;
         }
     }
 }

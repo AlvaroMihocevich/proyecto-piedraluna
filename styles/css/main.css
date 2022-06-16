@@ -550,6 +550,25 @@ nav {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
+.contacto-main {
+  background-image: url(../../images/mujerdefondo3.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50px; }
+
+@media screen and (max-width: 425px) {
+  .contacto-main {
+    background-position: -30px -200px; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .contacto-main {
+    background-position: 35px -240px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacto-main {
+    background-position: 0px; } }
+
 #p1consulta {
   font-family: Pulang;
   font-size: 35px;
@@ -561,7 +580,13 @@ nav {
   font-family: Pulang;
   font-size: 25px;
   color: #3f3f3f;
-  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25)); }
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
+  list-style: none;
+  background-color: rgba(240, 248, 255, 0.192);
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 310px; }
 
 .listaopcionescontacto a {
   text-decoration: none;
@@ -613,35 +638,80 @@ div .formconsulta {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
+.main-myc {
+  background-image: url(../../images/mujerdefondo2.png);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 470px 100px; }
+
+@media screen and (max-width: 425px) {
+  .main-myc {
+    background-position: -300px 100px; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .main-myc {
+    background-position: 50px 100px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-myc {
+    background-position: 50px 100px; } }
+
 .divtablamyc {
   display: flex;
   justify-content: center; }
   .divtablamyc .tablamyc {
-    border: solid 4px;
     border-collapse: collapse;
-    width: 75%;
-    border-color: #6e6556;
-    border-style: solid; }
-    .divtablamyc .tablamyc td {
-      border: solid 2px;
-      font-family: Cherishmoment;
-      font-size: 25px;
-      border-color: #A0937D;
-      text-align: center; }
-    .divtablamyc .tablamyc th {
-      border: solid 2px;
-      border-color: #A0937D;
-      text-align: center; }
+    width: 75%; }
     .divtablamyc .tablamyc thead {
       font-family: Pulang;
       font-size: 25px;
       background-image: url(../../images/fondo2.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      border-radius: 10px; }
+      .divtablamyc .tablamyc thead tr th {
+        text-align: center; }
+        .divtablamyc .tablamyc thead tr th:nth-child(1) {
+          border-bottom: solid 2px;
+          border-right: solid 2px;
+          border-color: #A0937D; }
+        .divtablamyc .tablamyc thead tr th:nth-child(2) {
+          border-left: solid 2px;
+          border-bottom: solid 2px;
+          border-color: #A0937D; }
     .divtablamyc .tablamyc tbody {
       font-family: Cafematcha;
       font-size: 18px;
-      background-color: #E3CDC1; }
+      background-color: #e3cdc16c; }
+      .divtablamyc .tablamyc tbody tr:nth-child(1) td:nth-child(1) {
+        border-bottom: solid 2px;
+        border-right: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(1) td:nth-child(2) {
+        border-bottom: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(2) td:nth-child(1) {
+        border-bottom: solid 2px;
+        border-right: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(2) td:nth-child(2) {
+        border-bottom: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(3) td:nth-child(1) {
+        border-bottom: solid 2px;
+        border-right: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(3) td:nth-child(2) {
+        border-bottom: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr:nth-child(4) td:nth-child(1) {
+        border-right: solid 2px;
+        border-color: #A0937D; }
+      .divtablamyc .tablamyc tbody tr td {
+        font-family: Cherishmoment;
+        font-size: 25px;
+        text-align: center; }
 
 .myc2 div div span {
   background-color: #A0937D;
@@ -650,16 +720,16 @@ div .formconsulta {
   border-radius: 10px; }
 
 .myc2 div div p {
-  background-color: #E3CDC1;
+  background-color: #e3cdc191;
   font-family: coffe;
   font-size: 20px;
   border-radius: 10px; }
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 768px) {
   .myc1 {
     display: none !important; } }
 
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 768px) {
   .myc2 {
     display: none !important; } }
 
@@ -667,15 +737,41 @@ div .formconsulta {
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
+.main-pf {
+  background-image: url(../../images/mujerdefondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: 300px 240px; }
+
+@media screen and (max-width: 425px) {
+  .pflista {
+    width: 300px; }
+  .main-pf {
+    background-position-y: 460px;
+    background-position-x: -400px; } }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .pflista {
+    width: 400px; }
+  .main-pf {
+    background-position-y: 300px;
+    background-position-x: -160px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pflista {
+    width: 600px; }
+  .main-pf {
+    background-position-y: -100px;
+    background-position-x: 200px; } }
+
 .pfgeneral {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.pflista {
-  width: 300px; }
-  .pflista ol {
-    padding-left: 20px; }
+.pflista ol {
+  padding-left: 20px; }
 
 .pflista-ol-items, .pflista-ol-li, .pflista-ol-p {
   padding: 10px;
@@ -693,16 +789,14 @@ div .formconsulta {
   font-size: 20px;
   width: 800px;
   background-color: rgba(178, 150, 98, 0.63); }
+  .pflista-ol-p a {
+    color: black; }
 
 @media screen and (max-width: 768px) {
   .pflista-ol-li {
     font-size: 28px; }
   .pflista-ol-p {
     font-size: 20px; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .pflista {
-    width: 500px; } }
 
 @media screen and (min-width: 1024px) {
   .pflista {
@@ -730,8 +824,11 @@ footer {
 
 .contactofooter ul {
   list-style: none;
-  padding-left: 5px;
-  width: 193px; }
+  width: 235px; }
+  .contactofooter ul li {
+    font-family: Pulang;
+    font-size: 18px;
+    color: #424242; }
 
 .redesfooter ul {
   list-style: none;
@@ -739,28 +836,23 @@ footer {
 
 #h6footer {
   font-family: CherishMoment;
-  font-size: 20px;
+  font-size: 28px;
   margin: 10px;
   color: rgba(255, 255, 255, 0.856);
   text-align: center; }
 
 .navfooterlistas li a {
   font-family: Pulang;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   color: #424242;
   transition: all; }
   .navfooterlistas li a:hover {
     color: #F6E6CB; }
 
-.contactofooterlistas li {
-  font-family: Pulang;
-  font-size: 15px;
-  color: #424242; }
-
 .redesfooterlistas li a {
   font-family: Pulang;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   transition: all; }
   .redesfooterlistas li a:hover {

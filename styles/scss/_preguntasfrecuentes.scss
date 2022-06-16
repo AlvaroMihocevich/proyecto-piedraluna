@@ -7,6 +7,42 @@
     ;
 }
 
+.main-pf{
+    background-image: url(../../images/mujerdefondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: 300px 240px;
+}
+@media screen and (max-width:425px) {
+    .pflista {
+        width: 300px;
+    }
+    .main-pf{
+        background-position-y: 460px;
+        background-position-x: -400px;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .pflista {
+        width: 400px;
+    }
+    .main-pf{
+        background-position-y: 300px;
+        background-position-x: -160px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .pflista {
+        width: 600px;
+    }
+    .main-pf{
+        background-position-y: -100px;
+        background-position-x: 200px;
+    }
+}
+
 .pfgeneral {
     display: flex;
     flex-direction: row;
@@ -14,7 +50,6 @@
 }
 
 .pflista {
-    width: 300px;
     ol {
         padding-left: 20px;
     }
@@ -41,6 +76,9 @@
     font-size: 20px;
     width: 800px;
     background-color: hsla(39, 34%, 54%, 0.63);
+    a{
+        color: black;
+    }
 }
 @media screen and (max-width: 768px){
     .pflista-ol-li{
@@ -50,11 +88,7 @@
         font-size: 20px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .pflista {
-        width: 500px;
-    }
-}
+
 
 @media screen and (min-width: 1024px) {
     .pflista {

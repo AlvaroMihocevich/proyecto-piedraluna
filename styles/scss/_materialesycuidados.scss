@@ -7,46 +7,123 @@
     ;
 }
 
+.main-myc{
+    background-image: url(../../images/mujerdefondo2.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 470px 100px;
+   
+}
+@media screen and (max-width:425px) {
+    .main-myc{
+        background-position: -300px 100px;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .main-myc{
+        background-position: 50px 100px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .main-myc{
+        background-position: 50px 100px;
+    }
+    
+}
 
 .divtablamyc {
     display: flex;
     justify-content: center;
     .tablamyc {
-        border: solid 4px;
         border-collapse: collapse;
         width: 75%;
-        border-color: #6e6556;
-        border-style: solid;
-        
-        td {
-            border: solid 2px;
-            font-family: Cherishmoment;
-            font-size: 25px;
-            border-color: $color2;
-            text-align: center;
-        }
-
-        th {
-            border: solid 2px;
-            border-color: $color2;
-            text-align: center;
-            
-        }
-
         thead {
             font-family: Pulang;
             font-size: 25px;
             background-image: url(../../images/fondo2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 10px;
+            tr{
+                
+                th {
+                    text-align: center;
+                    &:nth-child(1){
+                        border-bottom: solid 2px;
+                        border-right: solid 2px;
+                        border-color: $color2;
+                    }
+                    &:nth-child(2){
+                        border-left: solid 2px;
+                        border-bottom: solid 2px;
+                        border-color: $color2;
+                    }
+                }
+            }
         }
-
         tbody {
             font-family: Cafematcha;
             font-size: 18px;
-            background-color: $color4;
+            background-color: #e3cdc16c;
+            tr{
+                &:nth-child(1){
+                    td{
+                        &:nth-child(1){
+                            border-bottom: solid 2px;
+                            border-right: solid 2px;
+                            border-color: $color2;
+                        }
+                        &:nth-child(2){
+                            border-bottom: solid 2px;
+                            border-color: $color2;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    td{
+                        &:nth-child(1){
+                            border-bottom: solid 2px;
+                            border-right: solid 2px;
+                            border-color: $color2;
+                        }
+                        &:nth-child(2){
+                            border-bottom: solid 2px;
+                            border-color: $color2;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    td{
+                        &:nth-child(1){
+                            border-bottom: solid 2px;
+                            border-right: solid 2px;
+                            border-color: $color2;
+                        }
+                        &:nth-child(2){
+                            border-bottom: solid 2px;
+                            border-color: $color2;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    td{
+                        &:nth-child(1){
+
+                            border-right: solid 2px;
+                            border-color: $color2;
+                        }
+                    }
+                }
+                td {
+                    font-family: Cherishmoment;
+                    font-size: 25px;
+                    text-align: center;
+                }
+            }
         }
-    
     }
 }
 
@@ -60,7 +137,7 @@
                 border-radius: 10px;
             }   
             p{
-                background-color: $color4;
+                background-color: #e3cdc191;
                 font-family: coffe;
                 font-size: 20px;
                 border-radius: 10px;
@@ -71,14 +148,14 @@
     }
 }
 
-@media screen and (max-width: 778px){
+@media screen and (max-width: 768px){
     .myc1{
         display: none !important;
     }
     
 }
 
-@media screen and (min-width: 778px){
+@media screen and (min-width: 768px){
     .myc2{
         display: none !important;
     }
